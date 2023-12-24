@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background: rgb(37, 37, 104);
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header img{
+    height: 45px;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+}
+
+ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover{
+    font-size: 18px;
+}
+
+.nav ul li:first-child a {
+    color: blue;
+}
+
+span{
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* section  */
+section .container{
+    display: flex;
+}
+
+.left{
+    flex-basis: 50%;
+    flex-grow: 1;
+    display: flex;
+
+}
+
+.left img {
+    width: 100%;
+}
+
+
+.right{
+    flex-basis: 50%;
+    flex-grow: 1;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5%;
+
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.right p{
+    font-size: 35px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.right p+p{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    background-color: rgb(26, 26, 171);
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 22px;
+    padding: 5px 20px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+
+.card{
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 0px;
+    box-shadow: 15px 15px 20px black;
+    margin-bottom: 20px;
+
+}
+
+.card img{
+    height: 150px;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+    span
+    {
+        display: block;
+    }
+    ul li{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+
+    section .container{
+        flex-direction: column;
+    }
+
+
+    .left img{
+        padding: 2%;
+    }
+
+    .top {
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        margin: 20px;
+    }
+
+    .card h5{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 20px;
+    }
+
+    
+    }
